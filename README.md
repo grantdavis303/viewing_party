@@ -2,11 +2,9 @@
 
 ### There is currently no live deployment of this application.
 
-This is the base repo for the [Viewing Party Solo project](https://backend.turing.edu/module3/projects/viewing_party_solo) used for Turing's Backend Module 3.
+## About
 
-### About this Project
-
-Viewing Party Solo is an application that allows users to explore movies and create a Viewing Party Event that invites users and keeps track of a host. Mainly, your job is to connect with an external API and collect relevant information on each movie, its cast, and other information, to display it on each Viewing Party page. 
+Viewing Party is an application that allows users to explore movies and create a Viewing Party Event that invites users and keeps track of a host. Mainly, your job is to connect with an external API and collect relevant information on each movie, its cast, and other information, to display it on each Viewing Party page. 
 
 ## Setup
 
