@@ -1,17 +1,19 @@
 <h1><%= "#{@user.name}'s Dashboard" %></h1><br>
 
+<%= link_to "Discover Movies", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
+
 <section class="viewing_parties">
   <% @user.viewing_parties.each do |party| %>
     <div class="viewing_party">
-         Party Time: <%= party.date %> at <%= party.start_time %><br>
-         Host: <%= party.find_host.name %><br>
-         Who's Coming? <br/>
+        Party Time: <%= party.date %> at <%= party.start_time %><br>
+        Host: <%= party.find_host.name %><br>
+        Who's Coming? <br/>
 
-         <ol>
-            <% party.users.each do |attendee| %>
-               <li><%= attendee.name %> </li>
-            <% end %>
-         </ol>
+        <ol>
+          <% party.users.each do |attendee| %>
+              <li><%= attendee.name %> </li>
+          <% end %>
+        </ol>
 
     </div><br>
   <% end %>
