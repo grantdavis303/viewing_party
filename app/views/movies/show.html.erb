@@ -1,0 +1,38 @@
+<h1> <%= @requested_movie["title"] %> </h1>
+
+<%= link_to "Create a Viewing Party", "/", method: :get %> <br>
+<%= link_to "Return to Discover Page", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
+
+<br><br>
+
+<h3> Details </h3>
+
+<p> Title: <%= @requested_movie["title"] %> </p>
+<p> Vote Average: <%= @requested_movie["vote_average"] %> </p>
+<p> Runtime: <%= @requested_movie["runtime"] %> (Convert to hours and minutes) </p>
+
+<h3> Description </h3>
+<p> <%= @requested_movie["overview"] %> </p>
+
+<h3> Genres: </h3>
+  <ul>
+  <% @requested_movie["genres"].each do |genre_item| %>
+    <li><p> <%= genre_item["name"] %> </p></li>
+  <% end %>
+  </ul>
+
+<h3> Cast </h3>
+  <ul>
+  <% @requested_movie_cast.each do |cast_member| %>
+    <li> <p> <%= cast_member["name"] %> </p> </li>
+  <% end %>
+  </ul>
+
+<h3> Reviews </h3>
+<p> Total Reviews: <%= @requested_movie_reviews.count %> </p>
+  <ul>
+  <% @requested_movie_reviews.each do |review| %>
+    <li> <b><p> Review by: <%= review["author"] %> </p></b> </li>
+    <i><p> "<%= review["content"] %>" </p></i>
+  <% end %>
+  </ul>
