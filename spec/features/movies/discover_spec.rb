@@ -4,32 +4,24 @@ RSpec.describe 'User Discover Movies Page', type: :feature do
 
   # User Story 1
   it "has search button and movie discover button" do
-    # Setup
     @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
 
-    # As a user, when I visit the '/users/:id/discover' path (where :id is the id of a valid user),
     visit "/users/#{@user.id}/discover"
 
-    # I should see
     within ".find_movies" do
-      # Button to Discover Top Rated Movies
       expect(page).to have_link("Discover Top Rated Movies", href: "/users/#{@user.id}/movies")
-      # Text field to enter keyword(s) to search by movie title
       expect(page).to have_field(:search_by_movie_title)
-      # Button to Search by Movie Title
       expect(page).to have_button("Search")
     end
   end
 
   # User Story 2 - Path 1 (Discover Top Rated Movies)
   it "discover top rated movies button leads to the movies page" do
-    # Setup
     @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
     json_response = File.read('spec/fixtures/movies_list.json')
     stub_request(:get, "https://api.themoviedb.org/3/trending/movie/week?api_key=0f7ff543b9146c27bb69c85b227e5f63").to_return(status: 200, body: json_response)
 
     visit "/users/#{@user.id}/discover"
-
     click_on ("Discover Top Rated Movies")
 
     expect(current_path).to eq("/users/#{@user.id}/movies")
@@ -43,19 +35,16 @@ RSpec.describe 'User Discover Movies Page', type: :feature do
       expect(page).to have_content("Vote Average: 6.49")
     end
     
-    # I should also see a button to return to the Discover Page.
     expect(page).to have_link("Return to Discover Page", href: "/users/#{@user.id}/discover")
   end
 
   # User Story 2 - Path 2 (Search)
   it "search button leads to the movies page" do
-    # Setup
     @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
     json_response = File.read('spec/fixtures/movies_list_tron.json')
     stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=0f7ff543b9146c27bb69c85b227e5f63&query=Tron").to_return(status: 200, body: json_response)
 
     visit "/users/#{@user.id}/discover"
-
     fill_in :search_by_movie_title, with: "Tron"
     click_on ("Search")
 
