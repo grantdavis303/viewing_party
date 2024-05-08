@@ -4,7 +4,9 @@
 
 <br><br>
 
-<% @requested_movies.each do |movie| %>
-  <%= link_to "#{movie["title"]}", "/users/#{@user.id}/movies/#{movie["id"]}", data: {turbo_method: :get} %>
-  <p> Vote Average: <%= movie["vote_average"] %> </p>
-<% end %>
+<section class="movies_list">
+  <% @requested_movies.each do |movie| %>
+    <%= link_to "#{movie["title"]}", "/users/#{@user.id}/movies/#{movie["id"]}", data: {turbo_method: :get} %>
+    <p> Vote Average: <%= movie["vote_average"] %> </p>
+  <% end %>
+</section>
