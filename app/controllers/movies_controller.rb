@@ -15,8 +15,20 @@ class MoviesController < ApplicationController
   end
 
   def show
-    # movie_id = params["movie_id"]
-    #@movie = Faraday.get("https://api.themoviedb.org/3/find/#{movie_id}?api_key=0f7ff543b9146c27bb69c85b227e5f63")
-    @movie = @requested_movies.find(params["movie_id"])
+    @user = User.find(params[:id])
+    #https://api.themoviedb.org/3/movie/550?api_key=0f7ff543b9146c27bb69c85b227e5f63&language=en-US&append_to_response=credits
+
+    # Movie Information
+    movie_id = params["movie_id"]
+    request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}?api_key=0f7ff543b9146c27bb69c85b227e5f63")
+    @requested_movie = JSON.parse(request.body)
+
+    # Movie Cast
+    cast_request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}/credits?api_key=0f7ff543b9146c27bb69c85b227e5f63")
+    @requested_movie_cast = JSON.parse(cast_request.body)["cast"][0...10]
+
+    # Movie Reviews
+    review_request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}/reviews?api_key=0f7ff543b9146c27bb69c85b227e5f63")
+    @requested_movie_reviews = JSON.parse(review_request.body)["results"]
   end
 end
