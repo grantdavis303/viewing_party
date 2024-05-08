@@ -1,0 +1,370 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": "/vUmeBHiGp5r2ydd8aEvbNLamTVD.jpg",
+          "genre_ids": [
+              878,
+              28,
+              12
+          ],
+          "id": 97,
+          "original_language": "en",
+          "original_title": "Tron",
+          "overview": "When brilliant video game maker Flynn hacks the mainframe of his ex-employer, he is beamed inside an astonishing digital world...and becomes part of the very game he is designing. In his mission through cyberspace, Flynn matches wits with a maniacal Master Control Program and teams up with Tron, a security measure created to bring balance to the digital environment.",
+          "popularity": 83.184,
+          "poster_path": "/zwSFEczP7AzqugAHHIX3zHniT0t.jpg",
+          "release_date": "1982-07-09",
+          "title": "Tron",
+          "video": false,
+          "vote_average": 6.7,
+          "vote_count": 2174
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 1231003,
+          "original_language": "en",
+          "original_title": "Tron",
+          "overview": "Through visual game of musical chairs, man and his desires are questioned as is his need to reach the final chair. This chair is seen as a place of eternity, power and authority. When playing musical chairs only one can sit on the last remaining seat, so it is time to ask ourselves what happens to the ones left unseated",
+          "popularity": 1.201,
+          "poster_path": "/eAPxSx6GTtQ4SwUhcEo1mImjOEc.jpg",
+          "release_date": "",
+          "title": "Throne",
+          "video": true,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/zK7wNuUQ4w0QQp9FF20YTPVgpyN.jpg",
+          "genre_ids": [
+              12,
+              28,
+              878
+          ],
+          "id": 20526,
+          "original_language": "en",
+          "original_title": "TRON: Legacy",
+          "overview": "Sam Flynn, the tech-savvy and daring son of Kevin Flynn, investigates his father's disappearance and is pulled into The Grid. With the help of a mysterious program named Quorra, Sam quests to stop evil dictator Clu from crossing into the real world.",
+          "popularity": 78.913,
+          "poster_path": "/vuifSABRpSnxCAOxEnWpNbZSXpp.jpg",
+          "release_date": "2010-12-14",
+          "title": "TRON: Legacy",
+          "video": false,
+          "vote_average": 6.47,
+          "vote_count": 6905
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/4jY8iP2D4VSl8Rz7fImGJcGe6lt.jpg",
+          "genre_ids": [
+              878
+          ],
+          "id": 533533,
+          "original_language": "en",
+          "original_title": "TRON: Ares",
+          "overview": "A highly sophisticated Program called Ares is sent from the digital world into the real world on a dangerous mission, marking humankind's first encounter with A.I. beings.",
+          "popularity": 19.967,
+          "poster_path": "/zpQwlTv7f4R0bAYkpOhG448Twqg.jpg",
+          "release_date": "2025-10-09",
+          "title": "TRON: Ares",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/3sq1yxhz0W60bLZEom5g8APSx3o.jpg",
+          "genre_ids": [
+              10402
+          ],
+          "id": 216451,
+          "original_language": "pt",
+          "original_title": "Diante do Trono 15 - Creio",
+          "overview": "",
+          "popularity": 0.6,
+          "poster_path": "/okL1DH0PyAXjCsPufSMCZi6ChHJ.jpg",
+          "release_date": "2012-11-01",
+          "title": "Diante do Trono 15 - Creio",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 232682,
+          "original_language": "en",
+          "original_title": "Kong Haakons Ankomst til Trondhjem",
+          "overview": "King Haakon travels to Trondhjem.",
+          "popularity": 0.6,
+          "poster_path": null,
+          "release_date": "1906-11-03",
+          "title": "King Haakon's Arrival in Trondheim",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 232685,
+          "original_language": "en",
+          "original_title": "Kongen og Dronningen kører til og fra Kroningen i Trondhjems Domkirke. den 22, juni 1906",
+          "overview": "The King and Queen travels to and from Trondhjems Domkirke.",
+          "popularity": 0.6,
+          "poster_path": null,
+          "release_date": "1906-11-03",
+          "title": "The King and Queen Drive Between Kroningen and Trondheim Cathedral on 22 June 1906",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 232686,
+          "original_language": "en",
+          "original_title": "Kong Haakons Kroning i Trondhjem",
+          "overview": "Haakon becomes King of Norway.",
+          "popularity": 0.6,
+          "poster_path": null,
+          "release_date": "1906-11-03",
+          "title": "King Haakon's Coronation in Trondheim",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              99
+          ],
+          "id": 653521,
+          "original_language": "no",
+          "original_title": "Trondheim På Film - Del 1",
+          "overview": "The first part of Trondheim captured on a film of a total of three parts. Cinema program with three old documentaries from Trondheim, in the period 1908 - 1962. The first one being \"Tram Ride Round Trondhjem\" from 1908, the second one being \"Trondheim in the sun and summer\" from around 1950, and thirdly, \"Trondheim - a growing city\" from 1962.",
+          "popularity": 0.6,
+          "poster_path": "/d06w3BIR2M4YdikMeOHZHlnautc.jpg",
+          "release_date": "2019-02-22",
+          "title": "Trondheim Captured on Film - Part 1",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              16,
+              35,
+              10751
+          ],
+          "id": 959502,
+          "original_language": "eu",
+          "original_title": "Tortolika eta Tronbon",
+          "overview": "The World Music Festival is being held in TronBon’s hometown and the judges are none other than the clowns Txirri, Mirri and Txiribiton. The night before the festival, all the instruments in the town —as well as the clowns— are mysteriously stolen.",
+          "popularity": 0.6,
+          "poster_path": null,
+          "release_date": "1998-01-01",
+          "title": "Tortolika & Tronbon",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 564422,
+          "original_language": "no",
+          "original_title": "I Trondheim Bodde",
+          "overview": "A short film about the stumbling stones (Stolpersteine/Snublesteiner) in Trondheim.",
+          "popularity": 0.6,
+          "poster_path": "/1yghK01Fy18acjwSW75oNkOi1NV.jpg",
+          "release_date": "",
+          "title": "In Trondheim Lived",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              99
+          ],
+          "id": 941056,
+          "original_language": "no",
+          "original_title": "Trondheims kommunale bakeri 1920",
+          "overview": "Join an exclusive trip back to Trondheim in 1920, and to Trondheim municipal bakery! The film shows the daily work at the bakery from morning to evening, and it is an impressive production of baked goods we witness.",
+          "popularity": 0.6,
+          "poster_path": null,
+          "release_date": "1920-01-01",
+          "title": "Trondheim municipal bakery 1920",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/77FPmlggzGbs2lI5cqFdBSOupgH.jpg",
+          "genre_ids": [
+              878,
+              53
+          ],
+          "id": 73362,
+          "original_language": "en",
+          "original_title": "TRON: The Next Day",
+          "overview": "TRON: The Next Day is a 10-minute short film, released on the Blu-ray edition of TRON: Legacy in April 2011, that fills in the backstory between TRON and TRON: Legacy. It features scenes from the real-world Flynn Lives ARG as well as purely in-universe content. The short film also reveals the full chronology of the Flynn Lives Organization, naming Roy Kleinberg as the secret figure heading up the operation and Alan Bradley as its financial backer. Some scenes in the short also set up the story for a potential third film.",
+          "popularity": 13.66,
+          "poster_path": "/cAx5VNYPHBjNfVBMyKpZhC4IwT9.jpg",
+          "release_date": "2011-03-14",
+          "title": "TRON: The Next Day",
+          "video": false,
+          "vote_average": 5.654,
+          "vote_count": 81
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/mmkkof9JxBKQrfMQ5P3N5SghmSs.jpg",
+          "genre_ids": [
+              28,
+              18
+          ],
+          "id": 988667,
+          "original_language": "vi",
+          "original_title": "Thanh Sói: Cúc Dại Trong Đêm",
+          "overview": "Bi, a Vietnamese country girl, survives a brutal childhood and escapes to Saigon. There, she is recruited by the mysterious Mrs. Lin, who trains Bi and her new friends Thanh and Hong in killing and sensuality to take down Hai, a Saigon crime lord.",
+          "popularity": 9.811,
+          "poster_path": "/h0yjBGTUToMqsQDY1SgkWRZjrgd.jpg",
+          "release_date": "2022-12-30",
+          "title": "Furies",
+          "video": false,
+          "vote_average": 6.573,
+          "vote_count": 48
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/jFSsOiYxbOuEMNFNjQ1d1dHb5bf.jpg",
+          "genre_ids": [
+              28,
+              12,
+              14
+          ],
+          "id": 157394,
+          "original_language": "it",
+          "original_title": "Il Trono di Fuoco",
+          "overview": "A mighty hero battles the son of Satan and his evil witch ally to save a kingdom from being taken over by the duo.",
+          "popularity": 4.597,
+          "poster_path": "/3i8cLm3EoPiQHMyO9sQ9JSfpGcO.jpg",
+          "release_date": "1983-06-17",
+          "title": "Throne of Fire",
+          "video": false,
+          "vote_average": 4.2,
+          "vote_count": 11
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/z94oO4k3bvOrtI5b3Dksv7k3M3y.jpg",
+          "genre_ids": [
+              18
+          ],
+          "id": 1114816,
+          "original_language": "vi",
+          "original_title": "Bên trong vỏ kén vàng",
+          "overview": "After a Vietnamese woman dies in a traffic accident in Saigon, her brother-in-law and her young son transport her body back to the former’s hometown in rural Vietnam, where they plan to give her a funeral.",
+          "popularity": 11.916,
+          "poster_path": "/7k1QaP44m4jpavnmn1G1Fs2mGFD.jpg",
+          "release_date": "2023-08-11",
+          "title": "Inside the Yellow Cocoon Shell",
+          "video": false,
+          "vote_average": 6.0,
+          "vote_count": 24
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/sw24lv5a6gLi9z3GX0clVDGyooo.jpg",
+          "genre_ids": [
+              27,
+              36
+          ],
+          "id": 42591,
+          "original_language": "it",
+          "original_title": "Il trono di fuoco",
+          "overview": "Horror icon Christopher Lee, who worked with Jess Franco on several occasions, plays Lord George Jeffreys, the infamous and merciless judge and Lord Chancellor in England torn by strife between the reigning King James II and William of Orange. Convincend of doing what's necessary, the cruel judge mercilessly persecutes 'traitors', who sympathize with the King's opponent William of Orange, as well as 'witches', who are accused of being in league with the devil...",
+          "popularity": 7.687,
+          "poster_path": "/fIeZzM9b5tNklBpWCpMArAOgetI.jpg",
+          "release_date": "1970-02-05",
+          "title": "The Bloody Judge",
+          "video": false,
+          "vote_average": 4.922,
+          "vote_count": 41
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/tjKQHSnuXvCGSAmf3KxyUF91ceE.jpg",
+          "genre_ids": [
+              99
+          ],
+          "id": 1192923,
+          "original_language": "no",
+          "original_title": "Trond-Viggo 70 år",
+          "overview": "Trond-Viggo Torgersen used to be a children's ombudsman and caretaker in Oslo, and at the same time had a wife and three children in Bergen. And it just had to slam. Not at least, he was a well-known NRK celebrity nationwide. He is now 70 years old, and will tell you his life story in this movie.",
+          "popularity": 1.4,
+          "poster_path": "/vqWtaiynLg6xdXtfY8kZQPdsCJK.jpg",
+          "release_date": "2022-07-01",
+          "title": "Trond-Viggo 70 Years",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              14,
+              16,
+              28
+          ],
+          "id": 359222,
+          "original_language": "ja",
+          "original_title": "ストライクウィッチーズ Operation Victory Arrow vol.1 サン・トロンの雷鳴",
+          "overview": "After half a month from Romagna release according to the first 501 Joint Fighter Wing , known as the \" Strike Witches \" ,  To Mina us Carl slant members of the original that are stationed in San Tron base of Berugika kingdom ,  Twin sister Ursula of Erica Hartmann have been dispatched .  Ursula belonging to the prototype development team of native Carl slant is , in Mina us  It was to have brought a variety of prototype in order to ask the practical test .  \"I 'm did me great pains come , but do not you sometimes the help of sister , Hartmann \"  \" Sister , I have something angry ? \"  No, no it ejected is Erica Hartmann to test the prototype .  However , the activities of Neuroi around Berugika was not ceased -",
+          "popularity": 2.591,
+          "poster_path": "/dkdP2e1ArQcyag0kNvRN5ZxRj4i.jpg",
+          "release_date": "2014-09-20",
+          "title": "Strike Witches: Operation Victory Arrow Vol.1 - The Thunder of Saint-Trond",
+          "video": false,
+          "vote_average": 5.0,
+          "vote_count": 1
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              35
+          ],
+          "id": 1041180,
+          "original_language": "th",
+          "original_title": "แถวตรง แสบอิหลี",
+          "overview": "The teacher took the students to camp.  But there is an unexpected event that causes the students to scatter each other into a tumultuous adventure story.",
+          "popularity": 0.897,
+          "poster_path": "/ck2afCmHzY7XsZKuqmZ5NYwarjU.jpg",
+          "release_date": "2022-11-03",
+          "title": "Taew Trong Sab E Lhee",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      }
+  ],
+  "total_pages": 18,
+  "total_results": 358
+}
