@@ -1,15 +1,19 @@
 <h1> <%= @requested_movie["title"] %> </h1>
 
-<%= link_to "Create a Viewing Party", "/", method: :get %> <br>
-<%= link_to "Return to Discover Page", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
+<section class="links">
+  <%= link_to "Create a Viewing Party", "/", method: :get %> <br>
+  <%= link_to "Return to Discover Page", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
+</section>
 
 <br><br>
 
-<h3> Details </h3>
+<section class="movie_details">
+  <h3> Details </h3>
+    <p> Title: <%= @requested_movie["title"] %> </p>
+    <p> Vote Average: <%= @requested_movie["vote_average"] %> </p>
+    <p> Runtime: <%= @requested_movie["runtime"] %> (Convert to hours and minutes) </p>
+</section>
 
-<p> Title: <%= @requested_movie["title"] %> </p>
-<p> Vote Average: <%= @requested_movie["vote_average"] %> </p>
-<p> Runtime: <%= @requested_movie["runtime"] %> (Convert to hours and minutes) </p>
 
 <h3> Description </h3>
 <p> <%= @requested_movie["overview"] %> </p>
