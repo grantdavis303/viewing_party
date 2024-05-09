@@ -11,14 +11,17 @@ class ViewingPartiesController < ApplicationController
 
   def create
     @user = User.find(params[:id])
+    @guests = [params["guest_1"].to_i, params["guest_2"].to_i, params["guest_3"].to_i]
 
+    # Create Viewing Party Event
     new_viewing_party = ViewingParty.create!(
       duration: params[:party_duration],
       date: params[:party_date],
       start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}",
+      movie_id: params[:movie_id]
     )
 
-    redirect_to "/users/#{@user.id}"
+    redirect_to "/create_user_parties?user_id=#{@user.id}&vp_id=#{new_viewing_party.id}&guests=#{@guests}"
   end
 
   def show
