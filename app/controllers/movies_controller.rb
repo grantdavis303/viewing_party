@@ -17,7 +17,6 @@ class MoviesController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    # Movie Information
     movie_id = params["movie_id"]
     request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews")
     parsed_json = JSON.parse(request.body)
