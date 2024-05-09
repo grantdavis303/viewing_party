@@ -24,7 +24,7 @@ class ViewingPartiesController < ApplicationController
     #   host: true
     # )
 
-    redirect_to "/"
+    redirect_to "/users/#{@user.id}"
   end
 
   def show
