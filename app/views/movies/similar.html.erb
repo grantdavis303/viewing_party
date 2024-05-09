@@ -1,0 +1,16 @@
+<h1> Similar Movies </h1>
+
+<section class="similar_movies">
+  <h3> Movies List </h3>
+    <ul>
+      <% @similar_movies["results"].each do |movie| %>
+        <div id="similar_movie_<%= movie["id"] %>">
+          <li> <h3> <%= movie["title"] %> </h3> </li>
+          <p> Overview: <%= movie["overview"] %> </p>
+          <p> Release Date: <%= movie["release_date"] %> </p>
+          <img id="img_<%= movie["id"] %>" src="https://image.tmdb.org/t/p/original/<%= movie["poster_path"] %>" width="300px">
+          <p> Vote Average: <%= movie["vote_average"] %> </p>
+        </div>
+      <% end %>
+    </ul>
+</section>
