@@ -1,0 +1,11 @@
+<h1> Discover Page for <%= @user.name %> </h1>
+
+<section class="find_movies">
+  <%= link_to "Discover Top Rated Movies", "/users/#{@user.id}/movies", method: :get %> <br><br>
+  <%= form_with url: "/users/#{@user.id}/movies", method: :get, data: {turbo: false} do |form| %>
+    <%= form.label "Enter Keywords:" %> <br>
+    <%= form.text_field :search_by_movie_title %> <br>
+    <br>
+    <%= form.submit "Search" %>
+  <% end %>
+</section>
