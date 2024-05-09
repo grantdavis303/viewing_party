@@ -2,6 +2,7 @@
 
 <section class="links">
   <%= link_to "Create a Viewing Party", "/users/#{@user.id}/movies/#{@requested_movie["id"]}/viewing_party/new", method: :get %> <br>
+  <%= link_to "Get Similar Movies", "/users/#{@user.id}/movies/#{@requested_movie["id"]}/similar", method: :get %> <br>
   <%= link_to "Return to Discover Page", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
 </section>
 
