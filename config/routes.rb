@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
 
-
   root "welcome#index"
   get '/register', to: 'users#new', as: 'register_user'
 
@@ -18,4 +17,6 @@ Rails.application.routes.draw do
   post "/users/:id/movies/:movie_id/viewing_party", to: "viewing_parties#create"
   get "/users/:id/movies/:movie_id/viewing_party/:id", to: "viewing_parties#show"
   
+  get "/create_user_parties", to: "user_parties#create"
+
 end
