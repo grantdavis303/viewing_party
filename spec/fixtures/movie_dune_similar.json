@@ -1,0 +1,415 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": "/u4C0jqh3Y8bwR5tP9Dqwok8QmMq.jpg",
+          "genre_ids": [
+              28,
+              12,
+              53
+          ],
+          "id": 15074,
+          "original_language": "en",
+          "original_title": "Extreme Ops",
+          "overview": "While filming an advertisement, some extreme sports enthusiasts unwittingly stop a group of terrorists.",
+          "popularity": 11.29,
+          "poster_path": "/984tq1bRL2uzR0wHrNzZVYTR0Al.jpg",
+          "release_date": "2002-11-27",
+          "title": "Extreme Ops",
+          "video": false,
+          "vote_average": 4.8,
+          "vote_count": 89
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/asgmpF2KDOes52OV1TWl2zCaoj6.jpg",
+          "genre_ids": [
+              18,
+              878,
+              14
+          ],
+          "id": 696506,
+          "original_language": "en",
+          "original_title": "Mickey 17",
+          "overview": "Mickey 17 is an \"expendable\", a disposable employee, on a human expedition sent to colonize the ice world Niflheim. After one iteration dies, a new body is regenerated with most of its memories intact.",
+          "popularity": 13.708,
+          "poster_path": "/y5rrebdZsGgpKb2U52rxMQTYbn0.jpg",
+          "release_date": "2025-01-28",
+          "title": "Mickey 17",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/ytBo0IU4Q9eDqdq2jdtzm3m6Qqc.jpg",
+          "genre_ids": [
+              28,
+              878,
+              80,
+              10770
+          ],
+          "id": 244839,
+          "original_language": "en",
+          "original_title": "Into Pitch Black",
+          "overview": "After the events of Pitch Black, a contractor is hired to locate Riddick, dead or alive. He reviews available information on him and the events of Pitch Black. Terrified, he hires a female cyberpunk merc to do the job for him.",
+          "popularity": 9.787,
+          "poster_path": "/daB2WDVkOXzaWohtuxvOArpRF4X.jpg",
+          "release_date": "2000-12-02",
+          "title": "Into Pitch Black",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 72
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/g1o5udFxZ8FPubJiLON7kXw5zIk.jpg",
+          "genre_ids": [
+              27,
+              14,
+              878
+          ],
+          "id": 221737,
+          "original_language": "en",
+          "original_title": "RoboCroc",
+          "overview": "When a top-secret unmanned spacecraft disintegrates on re-entry, its mysterious military payload crash-lands in the crocodile habitat of a place called Adventure Land, a combination water park, amusement land, and world-famous crocodile exhibit. Following its pre-programmed instructions, the payload—a next-generation nanotech-based combat drone—finds a host in the form of the park’s prize twenty-foot Australian Saltwater crocodile, Stella. She is the largest saltwater croc in captivity. Immediately upon infecting its host, the drone payload’s nanobots begin to transform Stella from an organic living creature into a lethal killing machine with only a single directive: survival!",
+          "popularity": 8.143,
+          "poster_path": "/gsurzan9Ml5OyUR7ybzhqw60yz5.jpg",
+          "release_date": "2013-09-14",
+          "title": "RoboCroc",
+          "video": false,
+          "vote_average": 4.7,
+          "vote_count": 48
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/k4w45fpj9fyi5oGGFEaeUMxVKSw.jpg",
+          "genre_ids": [
+              35,
+              14,
+              878,
+              10751,
+              9648
+          ],
+          "id": 2265,
+          "original_language": "de",
+          "original_title": "Momo",
+          "overview": "Momo is a young orphan girl who lives in the ruins of an old Roman amphitheater and becomes friends with everybody in the neighborhood. But when a powerful international corporation starts stealing everybody’s time, nobody has any time left for her, let alone their friends or families. Momo, together with Master Hora, the custodian of time, are the only ones who can go up against the time thieves before all is lost forever.",
+          "popularity": 16.066,
+          "poster_path": "/wth0MTgrfuekyrXxM0d6DjoTV7X.jpg",
+          "release_date": "1986-07-16",
+          "title": "Momo",
+          "video": false,
+          "vote_average": 7.0,
+          "vote_count": 63
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/6aYZjRsRCDGuzWbNo43Jsi2thh.jpg",
+          "genre_ids": [
+              12,
+              14,
+              10749,
+              10751
+          ],
+          "id": 2270,
+          "original_language": "en",
+          "original_title": "Stardust",
+          "overview": "In a countryside town bordering on a magical land, a young man makes a promise to his beloved that he'll retrieve a fallen star by venturing into the magical realm. His journey takes him into a world beyond his wildest dreams and reveals his true identity.",
+          "popularity": 35.056,
+          "poster_path": "/7zbFmxy3DqKYL2M8Hop6uylp2Uy.jpg",
+          "release_date": "2007-08-09",
+          "title": "Stardust",
+          "video": false,
+          "vote_average": 7.276,
+          "vote_count": 3904
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/nl5qDEJSTe4iO9VlhLhYJxKhbOI.jpg",
+          "genre_ids": [
+              12,
+              18,
+              14,
+              10751,
+              53
+          ],
+          "id": 2274,
+          "original_language": "en",
+          "original_title": "The Seeker: The Dark Is Rising",
+          "overview": "A boy's life is turned upside down when he learns that he is the last of a group of immortal warriors who have dedicated their lives to fighting the forces of the dark.",
+          "popularity": 18.383,
+          "poster_path": "/e7xzSPn8pTJSobjxSSpIipArfcq.jpg",
+          "release_date": "2007-10-05",
+          "title": "The Seeker: The Dark Is Rising",
+          "video": false,
+          "vote_average": 5.4,
+          "vote_count": 393
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/5AtsOadvDRlDsJGdcYkD1fv4pa8.jpg",
+          "genre_ids": [
+              878,
+              18
+          ],
+          "id": 2277,
+          "original_language": "en",
+          "original_title": "Bicentennial Man",
+          "overview": "Richard Martin buys a gift, a new NDR-114 robot. The product is named Andrew by the youngest of the family's children. \"Bicentennial Man\" follows the life and times of Andrew, a robot purchased as a household appliance programmed to perform menial tasks. As Andrew begins to experience emotions and creative thought, the Martin family soon discovers they don't have an ordinary robot.",
+          "popularity": 37.212,
+          "poster_path": "/wrs23eO0VEWwOQpXoOasMnlW9Y4.jpg",
+          "release_date": "1999-12-17",
+          "title": "Bicentennial Man",
+          "video": false,
+          "vote_average": 7.246,
+          "vote_count": 3496
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/bNtNBDF02GWsoHaT20nhd7zn0yl.jpg",
+          "genre_ids": [
+              878
+          ],
+          "id": 227252,
+          "original_language": "ja",
+          "original_title": "首都消失",
+          "overview": "Based on a science-fiction novel by Sakyo Komatsu. Tokyo is suddenly covered by a dome shaped electromagnetic cloud for an unknown reason and is totally blocked and isolated from other parts of the world. The temperature inside the cloud is slowly increasing. The Soviet Pacific fleet is getting closer. The U.S. is forcing Japan to form a new government. Scientists and research workers outside Tokyo have to race against time to find out how to get through the cloud in order to rescue the 12,000,000+ lives in Tokyo and the fate of the country.",
+          "popularity": 5.343,
+          "poster_path": "/ixtH0CbnfrpHx0bhdE96rKLj9Qe.jpg",
+          "release_date": "1987-01-16",
+          "title": "Tokyo Blackout",
+          "video": false,
+          "vote_average": 4.8,
+          "vote_count": 4
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/3O4Ge9qNKmYGVjG6BKBC2HfSMg1.jpg",
+          "genre_ids": [
+              35,
+              12,
+              36,
+              10749
+          ],
+          "id": 5769,
+          "original_language": "en",
+          "original_title": "Tom Jones",
+          "overview": "Tom loves Sophie and Sophie loves Tom. But Tom and Sophie are of differering classes. Can they find a way through the mayhem to be true to love?",
+          "popularity": 21.158,
+          "poster_path": "/bX6t9s00uaQvj3onicwgIgEEbmn.jpg",
+          "release_date": "1963-08-24",
+          "title": "Tom Jones",
+          "video": false,
+          "vote_average": 5.984,
+          "vote_count": 193
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/3WrR2rYX7nHWnBhWHLZptsJ2bEj.jpg",
+          "genre_ids": [
+              27,
+              878,
+              53
+          ],
+          "id": 5876,
+          "original_language": "en",
+          "original_title": "The Mist",
+          "overview": "After a violent storm, a dense cloud of mist envelops a small Maine town, trapping artist David Drayton and his five-year-old son in a local grocery store with other people. They soon discover that the mist conceals deadly horrors that threaten their lives, and worse, their sanity.",
+          "popularity": 161.996,
+          "poster_path": "/1CvJ6diBACKPVGOpcWuY4XPQdqX.jpg",
+          "release_date": "2007-11-21",
+          "title": "The Mist",
+          "video": false,
+          "vote_average": 6.92,
+          "vote_count": 4933
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/a8UAXIEf83pyvP0dBhnUIzvEYmE.jpg",
+          "genre_ids": [
+              878,
+              28,
+              12
+          ],
+          "id": 8536,
+          "original_language": "en",
+          "original_title": "Superman II",
+          "overview": "Three escaped criminals from the planet Krypton test the Man of Steel's mettle. Led by General Zod, the Kryptonians take control of the White House and partner with Lex Luthor to destroy Superman and rule the world. But Superman, who attempts to make himself human in order to get closer to Lois, realizes he has a responsibility to save the planet.",
+          "popularity": 71.077,
+          "poster_path": "/jw0tYFCbzjBN8SIhvRC2kdh7pzh.jpg",
+          "release_date": "1980-12-09",
+          "title": "Superman II",
+          "video": false,
+          "vote_average": 6.736,
+          "vote_count": 2165
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/gCBZOJw1uoJQqOt28NLkdlCp6ck.jpg",
+          "genre_ids": [
+              12,
+              35,
+              80
+          ],
+          "id": 8592,
+          "original_language": "en",
+          "original_title": "Dick Tracy",
+          "overview": "The comic strip detective finds his life vastly complicated when Breathless Mahoney makes advances towards him while he is trying to battle Big Boy Caprice's united mob.",
+          "popularity": 32.038,
+          "poster_path": "/xY6D5Ti44xuwzCkmf6Ygbj86BkP.jpg",
+          "release_date": "1990-04-05",
+          "title": "Dick Tracy",
+          "video": false,
+          "vote_average": 6.151,
+          "vote_count": 895
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/zMHyNxNt4zhL939XX8QLBW3gWfu.jpg",
+          "genre_ids": [
+              12,
+              18,
+              10752
+          ],
+          "id": 8619,
+          "original_language": "en",
+          "original_title": "Master and Commander: The Far Side of the World",
+          "overview": "After an abrupt and violent encounter with a French warship inflicts severe damage upon his ship, a captain of the British Royal Navy begins a chase over two oceans to capture or destroy the enemy, though he must weigh his commitment to duty and ferocious pursuit of glory against the safety of his devoted crew, including the ship's thoughtful surgeon, his best friend.",
+          "popularity": 33.468,
+          "poster_path": "/s1cVTQEZYn4nSjZLnFbzLP0j8y2.jpg",
+          "release_date": "2003-11-14",
+          "title": "Master and Commander: The Far Side of the World",
+          "video": false,
+          "vote_average": 7.144,
+          "vote_count": 3031
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/dlyeSZD92Arha6XVBteyNNaPi19.jpg",
+          "genre_ids": [
+              12,
+              28,
+              35,
+              53
+          ],
+          "id": 8697,
+          "original_language": "cn",
+          "original_title": "我是誰",
+          "overview": "A group of covert CIA operatives trailing a potential new energy source are double-crossed by corrupt agent Morgan, who causes a helicopter crash in remote South Africa. The sole survivor, suffering severe amnesia, is nursed to recovery by a kindly native tribe who call him \"Whoami\" after the question he keeps asking. With the help of a mysterious reporter Christine, Whoami pieces together his past and tracks the turncoat agent and his criminal cohorts.",
+          "popularity": 25.432,
+          "poster_path": "/9YDKLbBmWGpxG5bO3TBawtNNOAr.jpg",
+          "release_date": "1998-01-17",
+          "title": "Who Am I?",
+          "video": false,
+          "vote_average": 7.1,
+          "vote_count": 834
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/jEuwsmFS8JPzkDIhRL3B2BVYbU4.jpg",
+          "genre_ids": [
+              12,
+              28,
+              53,
+              878
+          ],
+          "id": 8810,
+          "original_language": "en",
+          "original_title": "Mad Max 2",
+          "overview": "Max Rockatansky returns as the heroic loner who drives the dusty roads of a postapocalyptic Australian Outback in an unending search for gasoline. Arrayed against him and the other scraggly defendants of a fuel-depot encampment are the bizarre warriors commanded by the charismatic Lord Humungus, a violent leader whose scruples are as barren as the surrounding landscape.",
+          "popularity": 47.423,
+          "poster_path": "/dhVekfpaCW3QavAwGYbaQig87Xc.jpg",
+          "release_date": "1981-12-24",
+          "title": "Mad Max 2",
+          "video": false,
+          "vote_average": 7.386,
+          "vote_count": 3472
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/9EpgaLS44zlXoTSAOhGiJmkIA4B.jpg",
+          "genre_ids": [
+              28,
+              27,
+              878
+          ],
+          "id": 8814,
+          "original_language": "en",
+          "original_title": "Doom",
+          "overview": "A team of space marines known as the Rapid Response Tactical Squad, led by Sarge, is sent to a science facility on Mars after somebody reports a security breach. There, they learn that the alert came after a test subject, a mass murderer purposefully injected with alien DNA, broke free and began killing people. Dr. Grimm, who is related to team member Reaper, informs them all that the chromosome can mutate humans into monsters -- and is highly infectious.",
+          "popularity": 29.61,
+          "poster_path": "/y50lH061yWOvEstoZRn7lYs0huk.jpg",
+          "release_date": "2005-10-20",
+          "title": "Doom",
+          "video": false,
+          "vote_average": 5.1,
+          "vote_count": 2135
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/2G20ecZ4HrWWmxn2gBdN2gxcxTy.jpg",
+          "genre_ids": [
+              27,
+              878,
+              53
+          ],
+          "id": 8843,
+          "original_language": "en",
+          "original_title": "The Cell",
+          "overview": "A psychotherapist journeys inside a comatose serial killer in the hopes of saving his latest victim.",
+          "popularity": 29.241,
+          "poster_path": "/fdQHMNDjBzA7PDw1aNFww2eriLz.jpg",
+          "release_date": "2000-08-17",
+          "title": "The Cell",
+          "video": false,
+          "vote_average": 6.273,
+          "vote_count": 1465
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/7rfcRXbFD0xr8NteNq1hwXUd4Af.jpg",
+          "genre_ids": [
+              12,
+              18,
+              28,
+              10749,
+              10751
+          ],
+          "id": 8856,
+          "original_language": "en",
+          "original_title": "The Karate Kid Part II",
+          "overview": "After discovering that his father is at death's door, Mr. Miyagi sets out to Japan, to see him with Daniel. Upon arriving, Miyagi must confront an old rival. Meanwhile, Daniel encounters a new love, and some new enemies.",
+          "popularity": 55.611,
+          "poster_path": "/k0OwgRR6PNu7h3SiqpCbRdZWNaG.jpg",
+          "release_date": "1986-06-18",
+          "title": "The Karate Kid Part II",
+          "video": false,
+          "vote_average": 6.268,
+          "vote_count": 2078
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/nOHKrmn2H1buOGEHPBh9HL2M8eg.jpg",
+          "genre_ids": [
+              53,
+              28,
+              878
+          ],
+          "id": 8870,
+          "original_language": "en",
+          "original_title": "Red Planet",
+          "overview": "Astronauts search for solutions to save a dying Earth by searching on Mars, only to have the mission go terribly awry.",
+          "popularity": 27.466,
+          "poster_path": "/6svTVlVEJDoOOEz1G09HLeb7vtF.jpg",
+          "release_date": "2000-11-10",
+          "title": "Red Planet",
+          "video": false,
+          "vote_average": 5.715,
+          "vote_count": 974
+      }
+  ],
+  "total_pages": 2386,
+  "total_results": 47705
+}
