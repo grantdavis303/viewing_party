@@ -70,6 +70,6 @@ Four Pillars of Object Oriented Programming
 
 ### Tests
 
-* 26 Tests Total (100% coverage on 139/139 LOC)
+* 30 Tests Total (100% coverage on 244/244 LOC)
 * 16 Model Tests (100% coverage on 84/84 LOC)
-* 10 Feature Tests (99.05% coverage on 104/105 LOC)
+* 14 Feature Tests (99.52% coverage on 209/210 LOC)
