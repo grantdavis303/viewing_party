@@ -1,11 +1,17 @@
 <h1> Viewing Party Show Page </h1>
 
+<h4> All Buy/Rent data is provided by JustWatch </h4>
+
 <h3> Where to buy the movie (e.g. Apple TV, Vudu, etc.) </h3>
-<p> Logos go here </p>
+
+  <% @where_to_buy.each do |provider| %>
+    <p> <%= provider["provider_name"] %> </p>
+    <img src="https://image.tmdb.org/t/p/original/<%= provider["logo_path"] %>" width="40px">
+  <% end %>
 
 <h3> Where to rent the movie (e.g. Amazon Video, DIRECTV, etc.) </h3>
-<p> Logos go here </p>
 
-And I should see a data attribution for the JustWatch platform that reads: 
-"Buy/Rent data provided by JustWatch",
-as per TMDB's instructions.
+  <% @where_to_rent.each do |provider| %>
+    <p> <%= provider["provider_name"] %> </p>
+    <img src="https://image.tmdb.org/t/p/original/<%= provider["logo_path"] %>" width="40px">
+  <% end %>

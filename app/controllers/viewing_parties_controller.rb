@@ -18,17 +18,14 @@ class ViewingPartiesController < ApplicationController
       start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}",
     )
 
-    # new_user_party = UserParty.create!(
-    #   viewing_party: new_viewing_party.id, 
-    #   user: @user.id, 
-    #   host: true
-    # )
-
     redirect_to "/users/#{@user.id}"
   end
 
   def show
-    # binding.pry
-    # @party = ViewingParty.find("")
+    movie_id = params["movie_id"]
+    request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}/watch/providers?api_key=0f7ff543b9146c27bb69c85b227e5f63")
+    parsed_json = JSON.parse(request.body)
+    @where_to_rent = parsed_json["results"]["US"]["rent"]
+    @where_to_buy = parsed_json["results"]["US"]["buy"]
   end
 end
