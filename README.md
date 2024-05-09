@@ -61,7 +61,7 @@ Four Pillars of Object Oriented Programming
 - [x] User Story 3 - Movie Details Page
 - [ ] User Story 4 - New Viewing Party Page
 - [ ] User Story 5 - Where to Watch
-- [ ] User Story 6 - Similar Movies
+- [x] User Story 6 - Similar Movies
 - [ ] User Story 7 - Add Movie Info to User Dashboard
 
 ### Utilized Sad Paths
