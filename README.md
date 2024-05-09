@@ -33,7 +33,9 @@ Example wireframes to follow are found [here](https://backend.turing.edu/module3
 [Link to Evaluation Rubric](https://backend.turing.edu/module3/projects/viewing_party_solo/rubric)
 
 - [ ] All core requirements are complete
-- [ ] Project achieves 90% or greater test coverage. In addition to “happy path”, project also includes “sad path”/edge case testing. Feature Tests stub external HTTP requests.
+- [ ] Project achieves 90% or greater test coverage. 
+- [ ] In addition to “happy path”, project also includes “sad path”/edge case testing. 
+- [ ] Feature Tests stub external HTTP requests.
 - [ ] Student can demonstrate how API consumption portions of the project demonstrate 2 of pillars listed below. Student can identify areas where code can be refactored. Student has refactored into facade and service design pattern.
 
 Four Pillars of Object Oriented Programming
@@ -53,10 +55,10 @@ Four Pillars of Object Oriented Programming
 
 [Link to User Stories](https://backend.turing.edu/module3/projects/viewing_party_solo/requirements)
 
-- [ ] User Story 0 - Setup
-- [ ] User Story 1 - Discover Movies: Search by Title
-- [ ] User Story 2 - Movie Results Page
-- [ ] User Story 3 - Movie Details Page
+- [x] User Story 0 - Setup
+- [x] User Story 1 - Discover Movies: Search by Title
+- [x] User Story 2 - Movie Results Page
+- [x] User Story 3 - Movie Details Page
 - [ ] User Story 4 - New Viewing Party Page
 - [ ] User Story 5 - Where to Watch
 - [ ] User Story 6 - Similar Movies
