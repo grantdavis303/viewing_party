@@ -2,18 +2,24 @@
 
 <h4> All Buy/Rent data is provided by JustWatch </h4>
 
+<br>
+
 <section class="movies_to_buy">
   <h3> Where to Buy: </h3>
     <% @where_to_buy.each do |provider| %>
-      <p> <%= provider["provider_name"] %> ID = <%= provider["provider_id"] %> </p>
+      <p> <%= provider["provider_name"] %> </p>
       <img id="logo_<%= provider["provider_id"] %>" src="https://image.tmdb.org/t/p/original<%= provider["logo_path"] %>" width="40px">
+      <br><br>
     <% end %>
 </section>
+
+<br>
 
 <section class="movies_to_rent">
   <h3> Where to Rent: </h3>
     <% @where_to_rent.each do |provider| %>
-      <p> <%= provider["provider_name"] %> ID = <%= provider["provider_id"] %> </p>
+      <p> <%= provider["provider_name"] %> </p>
       <img id="logo_<%= provider["provider_id"] %>" src="https://image.tmdb.org/t/p/original<%= provider["logo_path"] %>" width="40px">
+      <br><br>
     <% end %>
 </section>
