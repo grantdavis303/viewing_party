@@ -5,17 +5,61 @@
 <br><br>
 
 <section class="viewing_parties">
-  <% @user.viewing_parties.each do |party| %>
-    <div class="viewing_party">
-      Party Time: <%= party.date %> at <%= party.start_time %><br>
-      Host: <%= party.find_host.name %><br>
-      Who's Coming? <br/>
-        <ol>
-          <% party.users.each do |attendee| %>
-            <li> <%= attendee.name %> </li>
-          <% end %>
-        </ol>
-    </div>
-    <br>
-  <% end %>
+
+  <!-- Parties Hosting -->
+  <section class="parties_hosting">
+    <h3> Parties Hosting: </h3>
+      <% @user.viewing_parties.each do |party| %>
+        <% if party.find_host.id == @user.id %>
+          <div class="viewing_party">
+            <%= link_to "Party Show Page", "/users/#{@user.id}/movies/#{party.movie_id}/viewing_party/#{party.id}", method: :get %> <br>
+            Movie Title: <%= party.movie_id %> <br>
+            Party Time: <%= party.date %> at <%= party.start_time %><br>
+            Host: <b><%= party.find_host.name %></b> <br>
+            Who's Coming? <br/>
+              <ol>
+                <% party.users.each do |attendee| %>
+                  <li>
+                    <% if attendee.id == @user.id %>
+                      <b> <%= attendee.name %> </b>
+                    <% else %>
+                      <%= attendee.name %>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ol>
+          </div>
+          <br>
+        <% end %>
+      <% end %>    
+  </section>
+
+  <!-- Parties Invited To -->
+  <section class="parties_not_hosting">
+    <h3> Parties Invited To: </h3>
+        <% @user.viewing_parties.each do |party| %>
+        <% if party.find_host.id != @user.id %>
+          <div class="viewing_party">
+            <%= link_to "Party Show Page", "/users/#{@user.id}/movies/#{party.movie_id}/viewing_party/#{party.id}", method: :get %> <br>
+            Movie Title: <%= party.movie_id %> <br>
+            Party Time: <%= party.date %> at <%= party.start_time %><br>
+            Host: <%= party.find_host.name %><br>
+            Who's Coming? <br/>
+              <ol>
+                <% party.users.each do |attendee| %>
+                  <li>
+                    <% if attendee.id == @user.id %>
+                      <b> <%= attendee.name %> </b>
+                    <% else %>
+                      <%= attendee.name %>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ol>
+          </div>
+          <br>
+        <% end %>
+      <% end %>   
+  </section>
+
 </section>
