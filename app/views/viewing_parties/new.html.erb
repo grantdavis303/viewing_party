@@ -2,44 +2,49 @@
 
 <%= link_to "Return to Discover Page", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
 
-<br>
+<br><br>
 
-<%= form_with url: "/users/#{@user.id}/movies/#{@requested_movie["id"]}/viewing_party", method: :post, data: {turbo: false} do |form| %>
+<section class="new_vp_form">
+  <%= form_with url: "/users/#{@user.id}/movies/#{@requested_movie["id"]}/viewing_party", method: :post, data: {turbo: false} do |form| %>
+    
+    <!-- Party Details -->
+    <section class="party_details">
+      <h3> Viewing Party Details </h3>
+        <%= form.hidden_field :movie_length, value: @requested_movie["runtime"] %>
 
-  <h3> Viewing Party Details </h3>
-    <!-- Movie Name -->
-      <%= form.label :movie_name, "Movie Name:" %>
-      <%= form.label :movie_name, "#{@requested_movie["title"]}" %> 
-      <br><br>
-    <!-- Party Duration -->
-      <%= form.label :party_duration, "Party Duration:" %>
-      <%= form.text_field :party_duration, value: "#{@requested_movie["runtime"]}" %> 
-      <br>
-    <!-- Party Date -->
-      <%= form.label :party_date, "Party Date:" %>
-      <%= form.date_field :party_date, min: 0.days.ago %> 
-      <br>
-    <!-- Party Start Time -->
-      <%= form.label :party_start_time, "Party Start Time:" %>
-      <%= time_select 'game', 'game_time', { minute_step: 15, ignore_date: true, ampm: true } %> 
-      <br>
+        <%= form.label :movie_name, "Movie Name:" %>
+        <%= form.label :movie_name, "#{@requested_movie["title"]}" %> 
+        <br><br>
+        <%= form.label :party_duration, "Party Duration:" %>
+        <%= form.text_field :party_duration, value: "#{@requested_movie["runtime"]}" %> 
+        <br><br>
+        <%= form.label :party_date, "Party Date:" %>
+        <%= form.date_field :party_date, :value => Time.now %> 
+        <br><br>
+        <%= form.label :party_start_time, "Party Start Time:" %>
+        <%= time_select 'game', 'game_time', { minute_step: 15, ignore_date: true, ampm: true } %> 
+        <br><br>
+    </section>
 
-  <!-- Invite Other Users -->
-  <h3> Invite Guests to Party </h3>
-    <ul>
-      <% @all_users.each do |user| %>
-        <li> <%= user.name %> ...... <%= user.email %> </li>
-      <% end %>
-    </ul>
-    <%= form.label :guest_1, "Guest 1:" %>
-    <%= form.text_field :guest_1, placeholder: "Add guest by email" %> 
-    <br><br>
-    <%= form.label :guest_2, "Guest 2:" %>
-    <%= form.text_field :guest_2, placeholder: "Add guest by email"%>
-    <br><br>
-    <%= form.label :guest_3, "Guest 3:" %>
-    <%= form.text_field :guest_3, placeholder: "Add guest by email" %>
-    <br><br>
+    <!-- Invite Other Users -->
+    <section class="guest_details">
+      <h3> Invite Guests to Party </h3>
+        <ul>
+          <% @all_users.each do |user| %>
+            <li> <%= user.name %> [ID: <%= user.id %>] </li>
+          <% end %>
+        </ul>
+        <%= form.label :guest_1, "Guest 1:" %>
+        <%= form.text_field :guest_1, placeholder: "Add guest by ID" %> 
+        <br><br>
+        <%= form.label :guest_2, "Guest 2:" %>
+        <%= form.text_field :guest_2, placeholder: "Add guest by ID"%>
+        <br><br>
+        <%= form.label :guest_3, "Guest 3:" %>
+        <%= form.text_field :guest_3, placeholder: "Add guest by ID" %>
+        <br><br>
+    </section>
 
-  <%= form.submit "Create Party" %>
-<% end %>
+    <%= form.submit "Create Party" %>
+  <% end %>
+</section>

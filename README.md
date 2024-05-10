@@ -32,11 +32,13 @@ Example wireframes to follow are found [here](https://backend.turing.edu/module3
 
 [Link to Evaluation Rubric](https://backend.turing.edu/module3/projects/viewing_party_solo/rubric)
 
-- [ ] All core requirements are complete
-- [ ] Project achieves 90% or greater test coverage. 
-- [ ] In addition to “happy path”, project also includes “sad path”/edge case testing. 
-- [ ] Feature Tests stub external HTTP requests.
-- [ ] Student can demonstrate how API consumption portions of the project demonstrate 2 of pillars listed below. Student can identify areas where code can be refactored. Student has refactored into facade and service design pattern.
+- [**Not 100%**] All core requirements are complete
+- [x] Project achieves 90% or greater test coverage. 
+- [x] In addition to “happy path”, project also includes “sad path”/edge case testing. 
+- [x] Feature Tests stub external HTTP requests.
+- [**TBD**] Student can demonstrate how API consumption portions of the project demonstrate 2 of pillars listed below. 
+- [x] Student can identify areas where code can be refactored. 
+- [ ] Student has refactored into facade and service design pattern.
 
 Four Pillars of Object Oriented Programming
 * Polymorphism
@@ -59,17 +61,29 @@ Four Pillars of Object Oriented Programming
 - [x] User Story 1 - Discover Movies: Search by Title
 - [x] User Story 2 - Movie Results Page
 - [x] User Story 3 - Movie Details Page
-- [ ] User Story 4 - New Viewing Party Page
-- [ ] User Story 5 - Where to Watch
-- [ ] User Story 6 - Similar Movies
-- [ ] User Story 7 - Add Movie Info to User Dashboard
+- [x] User Story 4 - New Viewing Party Page
+- [x] User Story 5 - Where to Watch
+- [x] User Story 6 - Similar Movies
+- [**Not 100%**] User Story 7 - Add Movie Info to User Dashboard
+
+### Re: User Story 7 Missing Functionality
+
+I was able to get the images and movie title to appear on the Users Show page for the individual viewing parties, but was calling the api from the view and wasn't sure if that correct or not. Calling the api from the view also gave me some errors in other tests so I ultimately commented out the api call and deleted it, hence the missing functionality.
+
+As for the test for US 7, you'll see that there are no expect statements regarding the movie title and the movie image but rather placeholders for where they would go.
+
+![alt text](./img/api_call_view.png)
+
+![alt text](./img/users_show.png)
 
 ### Utilized Sad Paths
 
-* An error is thrown...
+#### When creating a viewing party:
+
+* An error is thrown when the viewing party length is less than the movie duration
 
 ### Tests
 
-* 30 Tests Total (100% coverage on 244/244 LOC)
-* 16 Model Tests (100% coverage on 84/84 LOC)
-* 14 Feature Tests (99.52% coverage on 209/210 LOC)
+* 36 Tests Total (100% coverage on 406/406 LOC)
+* 20 Feature Tests (100% coverage on 372/372 LOC)
+* 16 Model Tests (100% coverage on 92/92 LOC)

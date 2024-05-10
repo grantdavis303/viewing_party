@@ -10,16 +10,30 @@ class ViewingPartiesController < ApplicationController
   end
 
   def create
-    binding.pry
+    @user = User.find(params[:id])
+    @guests = [params["guest_1"].to_i, params["guest_2"].to_i, params["guest_3"].to_i]
 
-    #<ActionController::Parameters {"authenticity_token"=>"6dwMEU9NrPfuQKeZDlDMpgXXR3H51rf8mN5Cz0c0xAx3IW4N3JRdWmjmstXyh6orzAYAAZwZ0UgwJXDPwmNG2g", "party_duration"=>"126", "party_date"=>"2024-05-30", "game"=>{"game_time(4i)"=>"13", "game_time(5i)"=>"15"}, "guest_1"=>"freddy@sanford-balistreri.test", "commit"=>"Create Party", "controller"=>"viewing_parties", "action"=>"create", "id"=>"10", "movie_id"=>"746036"} permitted: false>
+    # Create Viewing Party Event
+    if params[:party_duration] < params[:movie_length]
+      flash[:notice] = "The selected party duration was less than the movie length. Please change it to be equal to or more than and try again."
+      redirect_to "/users/#{@user.id}"
+    else
+      new_viewing_party = ViewingParty.create!(
+        duration: params[:party_duration],
+        date: params[:party_date],
+        start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}",
+        movie_id: params[:movie_id]
+      )
 
-    # ViewingParty.create!(
-    #   duration: params[:party_duration], 
-    #   date: params[:party_date], 
-    #   start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}"
-    # )
+      redirect_to "/create_user_parties?user_id=#{@user.id}&vp_id=#{new_viewing_party.id}&guests=#{@guests}"
+    end
+  end
 
-    # redirect_to "/users/#{params[:id]}"
+  def show
+    movie_id = params["movie_id"]
+    request = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}/watch/providers?api_key=0f7ff543b9146c27bb69c85b227e5f63")
+    parsed_json = JSON.parse(request.body)
+    @where_to_rent = parsed_json["results"]["US"]["rent"]
+    @where_to_buy = parsed_json["results"]["US"]["buy"]
   end
 end
