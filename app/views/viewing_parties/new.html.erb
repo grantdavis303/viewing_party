@@ -10,6 +10,8 @@
     <!-- Party Details -->
     <section class="party_details">
       <h3> Viewing Party Details </h3>
+        <%= form.hidden_field :movie_length, value: @requested_movie["runtime"] %>
+
         <%= form.label :movie_name, "Movie Name:" %>
         <%= form.label :movie_name, "#{@requested_movie["title"]}" %> 
         <br><br>
