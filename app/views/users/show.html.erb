@@ -10,10 +10,12 @@
   <section class="parties_hosting">
     <h3> Parties Hosting: </h3>
       <% @user.viewing_parties.each do |party| %>
+
         <% if party.find_host.id == @user.id %>
           <div class="viewing_party">
             <%= link_to "Party Show Page", "/users/#{@user.id}/movies/#{party.movie_id}/viewing_party/#{party.id}", method: :get %> <br>
-            Movie Title: <%= party.movie_id %> <br>
+
+            Movie ID: <%= party.movie_id %> <br>
             Party Time: <%= party.date %> at <%= party.start_time %><br>
             Host: <b><%= party.find_host.name %></b> <br>
             Who's Coming? <br/>
@@ -38,10 +40,12 @@
   <section class="parties_not_hosting">
     <h3> Parties Invited To: </h3>
         <% @user.viewing_parties.each do |party| %>
+
         <% if party.find_host.id != @user.id %>
           <div class="viewing_party">
             <%= link_to "Party Show Page", "/users/#{@user.id}/movies/#{party.movie_id}/viewing_party/#{party.id}", method: :get %> <br>
-            Movie Title: <%= party.movie_id %> <br>
+            
+            Movie ID: <%= party.movie_id %> <br>
             Party Time: <%= party.date %> at <%= party.start_time %><br>
             Host: <%= party.find_host.name %><br>
             Who's Coming? <br/>
