@@ -36,7 +36,9 @@ Example wireframes to follow are found [here](https://backend.turing.edu/module3
 - [ ] Project achieves 90% or greater test coverage. 
 - [ ] In addition to “happy path”, project also includes “sad path”/edge case testing. 
 - [ ] Feature Tests stub external HTTP requests.
-- [ ] Student can demonstrate how API consumption portions of the project demonstrate 2 of pillars listed below. Student can identify areas where code can be refactored. Student has refactored into facade and service design pattern.
+- [ ] Student can demonstrate how API consumption portions of the project demonstrate 2 of pillars listed below. 
+- [ ] Student can identify areas where code can be refactored. 
+- [ ] Student has refactored into facade and service design pattern.
 
 Four Pillars of Object Oriented Programming
 * Polymorphism
@@ -60,7 +62,7 @@ Four Pillars of Object Oriented Programming
 - [x] User Story 2 - Movie Results Page
 - [x] User Story 3 - Movie Details Page
 - [ ] User Story 4 - New Viewing Party Page
-- [ ] User Story 5 - Where to Watch
+- [x] User Story 5 - Where to Watch
 - [x] User Story 6 - Similar Movies
 - [ ] User Story 7 - Add Movie Info to User Dashboard
 
@@ -70,6 +72,6 @@ Four Pillars of Object Oriented Programming
 
 ### Tests
 
-* 30 Tests Total (100% coverage on 244/244 LOC)
-* 16 Model Tests (100% coverage on 84/84 LOC)
-* 14 Feature Tests (99.52% coverage on 209/210 LOC)
+* 35 Tests Total (100% coverage on 387/387 LOC)
+* 19 Feature Tests (100% coverage on 353/353 LOC)
+* 16 Model Tests (100% coverage on 92/92 LOC)
