@@ -48,7 +48,6 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
     click_button "Create Party"
 
     expect(current_path).to eq("/users/#{@user.id}")
-    save_and_open_page
 
     within ".parties_hosting" do
       expect(page).to have_content("Movie Title: 693134")
