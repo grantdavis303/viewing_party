@@ -60,5 +60,4 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
   end
 
   # Need Validation Test for Duration Less than Movie
-
 end
