@@ -14,14 +14,19 @@ class ViewingPartiesController < ApplicationController
     @guests = [params["guest_1"].to_i, params["guest_2"].to_i, params["guest_3"].to_i]
 
     # Create Viewing Party Event
-    new_viewing_party = ViewingParty.create!(
-      duration: params[:party_duration],
-      date: params[:party_date],
-      start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}",
-      movie_id: params[:movie_id]
-    )
+    if params[:party_duration] < params[:movie_length]
+      flash[:notice] = "The selected party duration was less than the movie length. Please change it to be equal to or more than and try again."
+      redirect_to "/users/#{@user.id}"
+    else
+      new_viewing_party = ViewingParty.create!(
+        duration: params[:party_duration],
+        date: params[:party_date],
+        start_time: "#{params["game"]["game_time(4i)"].to_i}:#{params["game"]["game_time(5i)"].to_i}",
+        movie_id: params[:movie_id]
+      )
 
-    redirect_to "/create_user_parties?user_id=#{@user.id}&vp_id=#{new_viewing_party.id}&guests=#{@guests}"
+      redirect_to "/create_user_parties?user_id=#{@user.id}&vp_id=#{new_viewing_party.id}&guests=#{@guests}"
+    end
   end
 
   def show
