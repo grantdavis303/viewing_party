@@ -30,6 +30,7 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
     end
   end
 
+  # Party Length > Movie Duration
   it "new viewing party can be created" do
     @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
     @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com')
@@ -56,8 +57,31 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
       expect(page).to have_content("Michael")
       expect(page).to have_content("Bob")
     end
-
   end
 
-  # Need Validation Test for Duration Less than Movie
+  # Party Length < Movie Duration
+  it "new viewing party can be created" do
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
+    @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com')
+    @guest_2 = User.create!(name: 'Bob', email: 'bob@email.com')
+
+    json_response = File.read('spec/fixtures/movie_dune.json')
+    stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)
+
+    visit "/users/#{@user.id}/movies/693134/viewing_party/new"
+
+    within ".party_details" do
+      fill_in (:party_duration), with: "165" # Runtime is 167
+    end
+
+    within ".guest_details" do
+      fill_in (:guest_1), with: "#{@guest_1.id}"
+      fill_in (:guest_2), with: "#{@guest_2.id}"
+    end
+
+    click_button "Create Party"
+
+    expect(current_path).to eq("/users/#{@user.id}")
+    expect(page).to have_content("The selected party duration was less than the movie length. Please change it to be equal to or more than and try again.")
+  end
 end
