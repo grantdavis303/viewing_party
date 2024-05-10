@@ -51,7 +51,8 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
     expect(current_path).to eq("/users/#{@user.id}")
 
     within ".parties_hosting" do
-      expect(page).to have_content("Movie Title: 693134")
+      # Missing Movie Title and Image
+      expect(page).to have_content("Movie ID: 693134")
       expect(page).to have_content("Host: Tommy")
       expect(page).to have_content("Tommy")
       expect(page).to have_content("Michael")

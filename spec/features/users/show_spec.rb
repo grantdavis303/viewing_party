@@ -17,8 +17,6 @@ RSpec.describe 'User Show Page', type: :feature do
 
     visit "/users/#{@user.id}"
 
-    # save_and_open_page
-
     # I should see the viewing parties that the user has been invited to with the following details:
     within ".parties_hosting" do
       # - Movie Image
@@ -40,5 +38,4 @@ RSpec.describe 'User Show Page', type: :feature do
       expect(page).to have_content("Richard") 
     end
   end
-
 end
