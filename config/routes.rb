@@ -18,5 +18,4 @@ Rails.application.routes.draw do
   get "/users/:id/movies/:movie_id/viewing_party/:id", to: "viewing_parties#show"
   
   get "/create_user_parties", to: "user_parties#create"
-
 end
