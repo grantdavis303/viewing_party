@@ -13,12 +13,14 @@ class UserPartiesController < ApplicationController
 
     # Create UserParty Connections for Guest(s)
     @guests.each do |guest_id|
-      party_guest = User.find(guest_id)
-      UserParty.create!(
-        viewing_party: @viewing_party, 
-        user: party_guest, 
-        host: false
-      )      
+      if guest_id != 0
+        party_guest = User.find(guest_id)
+        UserParty.create!(
+          viewing_party: @viewing_party, 
+          user: party_guest, 
+          host: false
+        )
+      end
     end
 
     redirect_to "/users/#{@user.id}"
