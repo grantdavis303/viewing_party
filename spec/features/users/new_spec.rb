@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Create New User', type: :feature do
   describe 'When user visits "/register"' do
     before(:each) do
-      @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
-      @user = User.create!(name: 'Sam', email: 'sam@email.com')
+      @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
+      @user = User.create!(name: 'Sam', email: 'sam@email.com', password: "test", password_confirmation: "test")
 
       visit register_user_path
     end
@@ -25,8 +25,10 @@ RSpec.describe 'Create New User', type: :feature do
     end
     
     it 'When they fill in the form with their name and email then they are taken to their dashboard page "/users/:id"' do
-      fill_in "user[name]", with: 'Chris'
-      fill_in "user[email]", with: 'chris@email.com'
+      fill_in :user_name, with: 'Chris'
+      fill_in :user_email, with: 'chris@email.com'
+      fill_in :user_password, with: 'test'
+      fill_in :user_password_confirmation, with: 'test'
 
       click_button 'Create New User'
     
@@ -86,6 +88,28 @@ RSpec.describe 'Create New User', type: :feature do
       expect(page).to have_content('Email is invalid')
     end
 
+    it "Fail to properly input fields" do
+      fill_in :user_name, with: ''
+      fill_in :user_email, with: ''
+      fill_in :user_password, with: ''
+      fill_in :user_password_confirmation, with: ''
+      
+      click_button 'Create New User'
+
+      expect(current_path).to eq(register_user_path)
+      expect(page).to have_content("Name can't be blank, Email can't be blank, Password digest can't be blank, Email is invalid, Password can't be blank")
+    end
     
+    it "Fail to properly input fields" do
+      fill_in :user_name, with: 'grant'
+      fill_in :user_email, with: 'grant@gmail.com'
+      fill_in :user_password, with: 'test'
+      fill_in :user_password_confirmation, with: 'test1'
+      
+      click_button 'Create New User'
+
+      expect(current_path).to eq(register_user_path)
+      expect(page).to have_content("Password confirmation doesn't match Password")
+    end
   end
 end

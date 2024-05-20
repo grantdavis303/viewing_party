@@ -4,7 +4,7 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
   
   # User Story 4
   it "new viewing party page has all fields" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
     json_response = File.read('spec/fixtures/movie_dune.json')
     stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)
 
@@ -32,9 +32,9 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
 
   # Party Length > Movie Duration
   it "new viewing party can be created" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
-    @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com')
-    @guest_2 = User.create!(name: 'Bob', email: 'bob@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
+    @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com', password: "test", password_confirmation: "test")
+    @guest_2 = User.create!(name: 'Bob', email: 'bob@email.com', password: "test", password_confirmation: "test")
 
     json_response = File.read('spec/fixtures/movie_dune.json')
     stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)
@@ -62,9 +62,9 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
 
   # Party Length < Movie Duration
   it "new viewing party can be created" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
-    @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com')
-    @guest_2 = User.create!(name: 'Bob', email: 'bob@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
+    @guest_1 = User.create!(name: 'Michael', email: 'michael@email.com', password: "test", password_confirmation: "test")
+    @guest_2 = User.create!(name: 'Bob', email: 'bob@email.com', password: "test", password_confirmation: "test")
 
     json_response = File.read('spec/fixtures/movie_dune.json')
     stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)

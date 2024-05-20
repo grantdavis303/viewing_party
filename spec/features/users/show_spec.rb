@@ -4,9 +4,9 @@ RSpec.describe 'User Show Page', type: :feature do
 
   # User Story 7
   it "user show page has section for parties they are hosting" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
-    @guest_1 = User.create!(name: 'Richard', email: 'richard@email.com')
-    @guest_2 = User.create!(name: 'Michael', email: 'michael@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
+    @guest_1 = User.create!(name: 'Richard', email: 'richard@email.com', password: "test", password_confirmation: "test")
+    @guest_2 = User.create!(name: 'Michael', email: 'michael@email.com', password: "test", password_confirmation: "test")
     new_viewing_party = ViewingParty.create!(duration: rand(0..240), date: Faker::Date.forward(days: rand(1..14)), start_time: Time.new.strftime("%H:%M"))
     UserParty.create!(viewing_party: new_viewing_party, user: @user, host: true)
     UserParty.create!(viewing_party: new_viewing_party, user: @guest_1, host: false)

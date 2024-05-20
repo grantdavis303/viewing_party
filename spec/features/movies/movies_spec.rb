@@ -4,7 +4,7 @@ RSpec.describe 'Movies Show Page', type: :feature do
 
   # User Story 3
   it "discover top rated movies button leads to the movies page" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
     json_response = File.read('spec/fixtures/movie_dune.json')
     stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)
 
@@ -47,7 +47,7 @@ RSpec.describe 'Movies Show Page', type: :feature do
 
   # User Story 6
   it "Has link for similar movies" do
-    @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
+    @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: "test", password_confirmation: "test")
     json_response = File.read('spec/fixtures/movie_dune.json')
     stub_request(:get, "https://api.themoviedb.org/3/movie/693134?api_key=0f7ff543b9146c27bb69c85b227e5f63&append_to_response=credits,reviews").to_return(status: 200, body: json_response)
 
