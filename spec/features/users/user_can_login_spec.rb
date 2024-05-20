@@ -35,8 +35,6 @@ RSpec.describe 'Login Page', type: :feature do
     fill_in :password, with: "test123"
     click_button("Log In")
 
-    save_and_open_page 
-
     expect(current_path).to eq("/login")
     expect(page).to have_content("Sorry, your credentials are bad.")
   end
