@@ -4,11 +4,17 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    if current_user
+      @user = User.find(params[:id])
+    else
+      flash[:message] = "You must be logged in or registered to access a user's dashboard"
+      redirect_to "/"
+    end
   end
 
   def create
     user = User.create(user_params)
+    session[:user_id] = user.id
     if user.save
       flash[:success] = 'Successfully Created New User'
       redirect_to user_path(user)
@@ -22,7 +28,9 @@ class UsersController < ApplicationController
   end
 
   def login_user
+    cookies[:location] = {value: params[:location], expires: 1.day}
     user = User.find_by(email: params[:email])
+    session[:user_id] = user.id   
     if user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:success] = "Welcome, #{user.name}!"
@@ -31,6 +39,12 @@ class UsersController < ApplicationController
       flash[:error] = "Sorry, your credentials are bad."
       render :login_form
     end
+  end
+
+  def logout_user
+    #binding.pry
+    session.destroy
+    redirect_to "/"
   end
 
   private def user_params

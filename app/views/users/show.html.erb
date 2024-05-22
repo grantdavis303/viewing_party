@@ -1,5 +1,7 @@
 <h1><%= "#{@user.name}'s Dashboard" %></h1>
 
+<p> Currently in: <%= cookies[:location] %></p>
+
 <%= link_to "Discover Movies", "/users/#{@user.id}/discover", data: {turbo_method: :get} %>
 
 <br><br>
