@@ -3,5 +3,7 @@
   <%= form.text_field :email %> <br><br>
   <%= form.label :password, "Password:" %>
   <%= form.text_field :password %> <br><br>
+  <%= form.label :location, "Location:" %>
+  <%= form.text_field :location, value: cookies[:location] %> <br><br>
   <%= form.submit "Log In" %>
 <% end %>
